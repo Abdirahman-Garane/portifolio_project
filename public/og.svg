@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0e11"/>
+      <stop offset="1" stop-color="#1e2329"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.85" cy="0.2" r="0.7">
+      <stop offset="0" stop-color="#fcd535" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#fcd535" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <g stroke="#fcd535" stroke-opacity="0.06">
+    <line x1="0" y1="0" x2="1200" y2="0"/><line x1="0" y1="90" x2="1200" y2="90"/><line x1="0" y1="180" x2="1200" y2="180"/><line x1="0" y1="270" x2="1200" y2="270"/><line x1="0" y1="360" x2="1200" y2="360"/><line x1="0" y1="450" x2="1200" y2="450"/><line x1="0" y1="540" x2="1200" y2="540"/><line x1="0" y1="630" x2="1200" y2="630"/>
+  </g>
+  <rect x="84" y="70" width="1040" height="490" rx="24" fill="#0b0e11" fill-opacity="0.5" stroke="#fcd535" stroke-opacity="0.25"/>
+  <rect x="132" y="118" width="72" height="72" rx="14" fill="#fcd535"/>
+  <text x="168" y="166" font-family="Inter, sans-serif" font-size="44" font-weight="800" fill="#181a20" text-anchor="middle">AG</text>
+  <text x="132" y="270" font-family="Inter, sans-serif" font-size="58" font-weight="800" fill="#ffffff">Abdirahman Garane</text>
+  <text x="132" y="326" font-family="'JetBrains Mono', monospace" font-size="28" fill="#fcd535">FULL-STACK DEVELOPER</text>
+  <text x="132" y="382" font-family="Inter, sans-serif" font-size="26" fill="#929aa5">Premium web experiences · Next.js · TypeScript · Design</text>
+  <circle cx="976" cy="142" r="10" fill="#f6465d"/>
+  <circle cx="1012" cy="142" r="10" fill="#fcd535"/>
+  <circle cx="1048" cy="142" r="10" fill="#0ecb81"/>
+</svg>

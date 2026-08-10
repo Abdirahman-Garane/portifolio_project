@@ -1,0 +1,31 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Length 1242 >>
+stream
+BT /F1 12 Tf 40 780 Td 18 TL (ABDIRAHMAN GARANE) Tj T* (Full-Stack Developer) Tj T* () Tj T* (Nairobi, Kenya  |  hello@abdirahman.dev  |  github.com/Abdirahman-Garane) Tj T* () Tj T* (SUMMARY) Tj T* (Full-stack developer building premium, high-performance web applications) Tj T* (with Next.js, React, TypeScript, and careful design.) Tj T* () Tj T* (SKILLS) Tj T* (Frontend: React, Next.js, TypeScript, Tailwind CSS, Framer Motion) Tj T* (Backend: Node.js, Express, REST APIs) Tj T* (Database: PostgreSQL, Supabase, MySQL, Prisma) Tj T* (Tools: Git, Docker, Figma, Vercel, CI/CD) Tj T* () Tj T* (EXPERIENCE) Tj T* (Freelance - Full-Stack Developer \(2023 - Present\)) Tj T* (- Built full-stack products with Next.js, TypeScript, and Supabase) Tj T* (- Delivered responsive, accessible interfaces scoring 95+ on Lighthouse) Tj T* () Tj T* (Independent Projects - Product Builder \(2022 - 2023\)) Tj T* (- Shipped a real-estate platform, expense tracker, and hospital system) Tj T* (- Practiced API design with a production-style prayer times REST API) Tj T* () Tj T* (EDUCATION) Tj T* (BSc Computer Science - University of Nairobi \(2020 - 2024\)) Tj T* () Tj T* (This is a placeholder resume. Replace with your full resume content.) Tj T* ET
+endstream
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000316 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1603
+%%EOF

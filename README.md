@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio — Abdirahman Garane
+
+A premium, fully static portfolio website for full-stack developer **Abdirahman Garane**, built with Next.js 15 (App Router), TypeScript, Tailwind CSS, shadcn/ui, Framer Motion, and Lucide React.
+
+The design language is inspired by the Binance design system — a deep near-black canvas, a single high-voltage yellow accent (`#fcd535`), flat color-block cards, hairline borders, tabular numeric type, and a deliberate light-gray footer that closes the page.
+
+## Tech Stack
+
+- **Next.js 15** (App Router, static generation)
+- **TypeScript**
+- **Tailwind CSS v4**
+- **shadcn/ui** (Radix primitives)
+- **Framer Motion** (animations, page transitions, counters)
+- **Lucide React** + custom brand icons
+
+No databases, APIs, or backend services — everything is local, typed data.
+
+## Pages
+
+- `/` — Home (hero, intro, featured projects, statistics, skills, services, testimonials, contact)
+- `/about` — Biography, summary, experience, education, achievements, resume
+- `/projects` — Grid with search + category filtering
+- `/projects/[slug]` — Project detail with gallery, features, tech stack
+- `/skills` — Six skill categories with animated progress indicators
+- `/experience` — Career & education timeline
+- `/services` — Services + process
+- `/testimonials` — Client testimonials
+- `/contact` — Validated (demo-only) contact form
+- 404 page, sitemap, robots.txt, Open Graph assets
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run dev        # start dev server
+npm run build      # production build (static)
+npm run start      # serve production build
+npm run lint       # lint
+```
 
-## Learn More
+Assets (project covers, avatar, OG image) are generated from `scripts/generate-assets.mjs` and `scripts/generate-resume.mjs` — run `node scripts/generate-assets.mjs` to regenerate after editing project data.
 
-To learn more about Next.js, take a look at the following resources:
+## Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```text
+app/          # routes, layout, metadata, sitemap, robots
+components/   # ui (shadcn), sections, feature components
+data/         # typed local content (projects, skills, experience…)
+hooks/        # client hooks
+lib/          # cn() utility
+types/        # shared TypeScript types
+utils/        # framer-motion variants
+public/       # images, icons, resume
+```
