@@ -82,6 +82,15 @@ export interface Testimonial {
   initials: string;
 }
 
+export interface Certificate {
+  title: string;
+  issuer: string;
+  year: string;
+  description: string;
+  image: string;
+  credentialUrl?: string;
+}
+
 export interface Statistic {
   value: number;
   suffix: string;
