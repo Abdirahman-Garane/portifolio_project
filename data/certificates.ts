@@ -2,39 +2,43 @@ import type { Certificate } from "@/types";
 
 export const certificates: Certificate[] = [
   {
-    title: "Certificate Name Placeholder 1",
-    issuer: "Issuer / Platform",
+    title: "Coding Algorithms with AI",
+    issuer: "IBM",
     year: "2025",
     description:
-      "Short description placeholder — replace this with a sentence or two about what this certificate covers and why it matters.",
-    image: "/certificates/placeholder-1.svg",
-    credentialUrl: "#",
+      "Learned core algorithm design and how to apply AI assistance to plan, implement, and debug algorithms efficiently.",
+    image: "/certificates/Coding Algorithms with AI_page-0001.jpg",
   },
   {
-    title: "Certificate Name Placeholder 2",
-    issuer: "Issuer / Platform",
+    title: "Developing Back-End Apps with Node.js and Express",
+    issuer: "IBM",
     year: "2025",
     description:
-      "Short description placeholder — replace this with a sentence or two about what this certificate covers and why it matters.",
-    image: "/certificates/placeholder-2.svg",
-    credentialUrl: "#",
+      "Built server-side applications with Node.js and Express, covering REST APIs, authentication, and database integration.",
+    image: "/certificates/Developing Back-End Apps with Node.js and Express_page-0001.jpg",
   },
   {
-    title: "Certificate Name Placeholder 3",
-    issuer: "Issuer / Platform",
-    year: "2024",
+    title: "Developing Front-End Apps with React",
+    issuer: "IBM",
+    year: "2025",
     description:
-      "Short description placeholder — replace this with a sentence or two about what this certificate covers and why it matters.",
-    image: "/certificates/placeholder-3.svg",
-    credentialUrl: "#",
+      "Developed modern, component-based user interfaces with React, including state management and hooks.",
+    image: "/certificates/Developing Front-End Apps with React_page-0001.jpg",
   },
   {
-    title: "Certificate Name Placeholder 4",
-    issuer: "Issuer / Platform",
-    year: "2024",
+    title: "Foundations of Leadership and Management",
+    issuer: "IBM",
+    year: "2025",
     description:
-      "Short description placeholder — replace this with a sentence or two about what this certificate covers and why it matters.",
-    image: "/certificates/placeholder-4.svg",
-    credentialUrl: "#",
+      "Covered the core principles of effective leadership, team management, and professional communication.",
+    image: "/certificates/Foundations of Leadership and Management_page-0001.jpg",
+  },
+  {
+    title: "Preparing Data for Analysis with Microsoft Excel",
+    issuer: "Microsoft",
+    year: "2025",
+    description:
+      "Learned to clean, organize, and prepare data in Microsoft Excel for meaningful analysis.",
+    image: "/certificates/Preparing Data for Analysis with Microsoft Excel_page-0001.jpg",
   },
 ];
