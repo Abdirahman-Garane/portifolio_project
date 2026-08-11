@@ -8,6 +8,7 @@ export const certificates: Certificate[] = [
     description:
       "Learned core algorithm design and how to apply AI assistance to plan, implement, and debug algorithms efficiently.",
     image: "/certificates/Coding Algorithms with AI_page-0001.jpg",
+    credentialUrl: "https://coursera.org/verify/example1",
   },
   {
     title: "Developing Back-End Apps with Node.js and Express",
@@ -16,6 +17,7 @@ export const certificates: Certificate[] = [
     description:
       "Built server-side applications with Node.js and Express, covering REST APIs, authentication, and database integration.",
     image: "/certificates/Developing Back-End Apps with Node.js and Express_page-0001.jpg",
+    credentialUrl: "https://coursera.org/verify/example2",
   },
   {
     title: "Developing Front-End Apps with React",
@@ -24,6 +26,7 @@ export const certificates: Certificate[] = [
     description:
       "Developed modern, component-based user interfaces with React, including state management and hooks.",
     image: "/certificates/Developing Front-End Apps with React_page-0001.jpg",
+    credentialUrl: "https://coursera.org/verify/example3",
   },
   {
     title: "Foundations of Leadership and Management",
@@ -32,6 +35,7 @@ export const certificates: Certificate[] = [
     description:
       "Covered the core principles of effective leadership, team management, and professional communication.",
     image: "/certificates/Foundations of Leadership and Management_page-0001.jpg",
+    credentialUrl: "https://coursera.org/verify/example4",
   },
   {
     title: "Preparing Data for Analysis with Microsoft Excel",
@@ -40,5 +44,6 @@ export const certificates: Certificate[] = [
     description:
       "Learned to clean, organize, and prepare data in Microsoft Excel for meaningful analysis.",
     image: "/certificates/Preparing Data for Analysis with Microsoft Excel_page-0001.jpg",
+    credentialUrl: "https://learn.microsoft.com/verify/example5",
   },
 ];

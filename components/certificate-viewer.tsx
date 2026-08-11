@@ -1,10 +1,12 @@
 "use client";
 
 import { AnimatePresence, m } from "framer-motion";
-import { X } from "lucide-react";
+import { X, ExternalLink, Download, CheckCircle2 } from "lucide-react";
 import Image from "next/image";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import type { Certificate } from "@/types";
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 interface CertificateViewerProps {
   certificate: Certificate | null;
@@ -12,6 +14,8 @@ interface CertificateViewerProps {
 }
 
 export function CertificateViewer({ certificate, onClose }: CertificateViewerProps) {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
   useEffect(() => {
     if (!certificate) return;
 
@@ -27,6 +31,24 @@ export function CertificateViewer({ certificate, onClose }: CertificateViewerPro
       document.body.style.overflow = "";
     };
   }, [certificate, onClose]);
+
+  const handleDownload = () => {
+    if (!certificate) return;
+    const link = document.createElement("a");
+    link.href = certificate.image;
+    link.download = `${certificate.title.replace(/\s+/g, "-")}-certificate.jpg`;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+  const handleVerify = () => {
+    if (certificate?.credentialUrl) {
+      window.open(certificate.credentialUrl, "_blank", "noopener,noreferrer");
+    }
+  };
 
   return (
     <AnimatePresence>
@@ -61,13 +83,38 @@ export function CertificateViewer({ certificate, onClose }: CertificateViewerPro
                   {certificate.issuer} · {certificate.year}
                 </p>
               </div>
-              <button
-                onClick={onClose}
-                aria-label="Close certificate preview"
-                className="flex size-9 shrink-0 items-center justify-center rounded-md border border-hairline text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
-              >
-                <X className="size-4" />
-              </button>
+              <div className="flex items-center gap-2">
+                {certificate.credentialUrl && (
+                  <Button
+                    size="sm"
+                    variant="outline"
+                    onClick={handleVerify}
+                    className="gap-1.5"
+                    aria-label="Verify certificate on issuer website"
+                  >
+                    <ExternalLink className="size-3.5" />
+                    <CheckCircle2 className="size-3.5" />
+                    Verify
+                  </Button>
+                )}
+                <Button
+                  size="sm"
+                  variant="outline"
+                  onClick={handleDownload}
+                  className="gap-1.5"
+                  aria-label="Download certificate image"
+                >
+                  <Download className="size-3.5" />
+                  Download
+                </Button>
+                <button
+                  onClick={onClose}
+                  aria-label="Close certificate preview"
+                  className="flex size-9 shrink-0 items-center justify-center rounded-md border border-hairline text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+                >
+                  <X className="size-4" />
+                </button>
+              </div>
             </div>
 
             <div className="flex min-h-0 flex-1 items-center justify-center overflow-auto bg-muted/40 p-4 sm:p-6">
@@ -75,15 +122,28 @@ export function CertificateViewer({ certificate, onClose }: CertificateViewerPro
                 initial={{ scale: 0.96, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1], delay: 0.05 }}
-                className="relative w-full overflow-hidden rounded-lg border border-hairline bg-card shadow-lg dark:border-[#2b3139]"
+                className={cn(
+                  "relative w-full overflow-hidden rounded-lg border border-hairline bg-card shadow-lg dark:border-[#2b3139]",
+                  !imageLoaded && "bg-muted/50"
+                )}
               >
                 <Image
                   src={certificate.image}
                   alt={`${certificate.title} certificate`}
                   width={1600}
                   height={1000}
-                  className="h-auto w-full object-contain"
+                  className={cn("h-auto w-full object-contain transition-opacity duration-300", imageLoaded ? "opacity-100" : "opacity-0")}
+                  onLoad={() => setImageLoaded(true)}
+                  priority
                 />
+                {!imageLoaded && (
+                  <div className="absolute inset-0 flex items-center justify-center bg-muted/50">
+                    <div className="flex flex-col items-center gap-3 text-muted-foreground">
+                      <div className="size-8 border-2 border-primary/30 border-t-primary rounded-full animate-spin" />
+                      <p className="text-sm font-medium">Loading certificate...</p>
+                    </div>
+                  </div>
+                )}
               </m.div>
             </div>
           </m.div>

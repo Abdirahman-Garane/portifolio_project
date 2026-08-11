@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Eye, Award } from "lucide-react";
+import { Eye, Award, ExternalLink } from "lucide-react";
 import { useState } from "react";
 import type { Certificate } from "@/types";
 import { cn } from "@/lib/utils";
@@ -15,6 +15,13 @@ interface CertificateCardProps {
 
 export function CertificateCard({ certificate, className }: CertificateCardProps) {
   const [viewing, setViewing] = useState(false);
+
+  const handleVerify = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (certificate.credentialUrl) {
+      window.open(certificate.credentialUrl, "_blank", "noopener,noreferrer");
+    }
+  };
 
   return (
     <>
@@ -37,6 +44,18 @@ export function CertificateCard({ certificate, className }: CertificateCardProps
           <span className="absolute right-3 top-3 rounded-md bg-card/90 px-2.5 py-1 font-mono text-[11px] font-semibold text-foreground backdrop-blur">
             {certificate.year}
           </span>
+          {certificate.credentialUrl && (
+            <a
+              href={certificate.credentialUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={handleVerify}
+              className="absolute left-3 top-3 rounded-md bg-card/90 px-2.5 py-1 font-mono text-[11px] font-semibold text-primary backdrop-blur hover:bg-card transition-colors"
+              aria-label={`Verify ${certificate.title} certificate`}
+            >
+              <ExternalLink className="inline size-3 mr-1" /> Verify
+            </a>
+          )}
         </div>
 
         <div className="flex flex-1 flex-col gap-3 p-5">
@@ -51,9 +70,24 @@ export function CertificateCard({ certificate, className }: CertificateCardProps
             {certificate.description}
           </p>
           <div className="mt-1 border-t border-hairline pt-3.5 dark:border-[#2b3139]">
-            <Button size="sm" variant="secondary" className="w-full" onClick={() => setViewing(true)}>
-              <Eye className="size-4" /> View certificate
-            </Button>
+            <div className="flex gap-2">
+              <Button size="sm" variant="secondary" className="flex-1" onClick={() => setViewing(true)}>
+                <Eye className="size-4 mr-1.5" /> View
+              </Button>
+              {certificate.credentialUrl && (
+                <a
+                  href={certificate.credentialUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={handleVerify}
+                  className="flex-1"
+                >
+                  <Button size="sm" variant="outline" className="w-full justify-center gap-1.5">
+                    <ExternalLink className="size-4" /> Verify
+                  </Button>
+                </a>
+              )}
+            </div>
           </div>
         </div>
       </div>
