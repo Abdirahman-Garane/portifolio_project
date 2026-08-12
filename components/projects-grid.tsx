@@ -47,7 +47,7 @@ export function ProjectsGrid() {
                 "rounded-md border px-3.5 py-1.5 text-[13px] font-medium transition-all",
                 category === cat
                   ? "border-transparent bg-primary text-primary-foreground"
-                  : "border-hairline text-muted-foreground hover:border-primary/40 hover:text-foreground dark:border-[#2b3139]"
+                  : "border-hairline text-muted-foreground hover:border-primary/40 hover:text-foreground"
               )}
             >
               {cat}

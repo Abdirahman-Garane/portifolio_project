@@ -34,7 +34,7 @@ export function SkillsOverview() {
           {skillCategories.map((cat) => (
             <span
               key={cat.id}
-              className="rounded-md border border-hairline bg-muted/40 px-3 py-1.5 text-xs font-medium text-muted-foreground dark:border-[#2b3139]"
+              className="rounded-md border border-hairline bg-muted/40 px-3 py-1.5 text-xs font-medium text-muted-foreground"
             >
               {cat.label}
             </span>

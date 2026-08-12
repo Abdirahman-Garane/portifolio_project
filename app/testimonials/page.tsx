@@ -46,7 +46,7 @@ export default function TestimonialsPage() {
             {summary.map((stat) => (
               <div
                 key={stat.label}
-                className="flex flex-col items-center gap-2 rounded-xl border border-hairline bg-card p-6 text-center dark:border-[#2b3139]"
+                className="flex flex-col items-center gap-2 rounded-xl border border-hairline bg-card p-6 text-center"
               >
                 <Counter
                   value={stat.value}

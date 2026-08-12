@@ -5,12 +5,12 @@ import type { Skill } from "@/types";
 import { Icon } from "@/components/icon";
 
 const categoryColors: Record<Skill["category"], string> = {
-  frontend: "#fcd535",
-  backend: "#0ecb81",
-  database: "#3b82f6",
-  design: "#2dbdb6",
-  tools: "#929aa5",
-  devops: "#f6465d",
+  frontend: "#e8b94a",
+  backend: "#1a3a3a",
+  database: "#b8a4ed",
+  design: "#ffb084",
+  tools: "#6a6a6a",
+  devops: "#ff6b5a",
 };
 
 export function SkillCard({ skill, index }: { skill: Skill; index: number }) {
@@ -23,7 +23,7 @@ export function SkillCard({ skill, index }: { skill: Skill; index: number }) {
       viewport={{ once: true, margin: "-60px" }}
       transition={{ duration: 0.5, delay: (index % 4) * 0.06 }}
       whileHover={{ y: -4 }}
-      className="group flex items-center gap-4 rounded-xl border border-hairline bg-card p-4 transition-colors hover:border-primary/40 dark:border-[#2b3139]"
+      className="group flex items-center gap-4 rounded-xl border border-hairline bg-card p-4 transition-colors hover:border-primary/40"
     >
       <div
         className="flex size-11 shrink-0 items-center justify-center rounded-lg border transition-transform duration-300 group-hover:scale-110"
@@ -41,7 +41,7 @@ export function SkillCard({ skill, index }: { skill: Skill; index: number }) {
             {skill.level}%
           </span>
         </div>
-        <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-muted dark:bg-[#2b3139]">
+        <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-muted">
           <m.div
             className="h-full rounded-full"
             style={{ backgroundColor: color }}

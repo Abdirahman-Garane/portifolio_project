@@ -81,7 +81,7 @@ export function ContactForm() {
           exit={{ opacity: 0, y: -8 }}
           onSubmit={onSubmit}
           noValidate
-          className="space-y-5 rounded-xl border border-hairline bg-card p-6 sm:p-8 dark:border-[#2b3139]"
+          className="space-y-5 rounded-xl border border-hairline bg-card p-6 sm:p-8"
         >
           <div className="grid gap-5 sm:grid-cols-2">
             <div className="space-y-2">

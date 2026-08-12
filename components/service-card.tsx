@@ -13,7 +13,7 @@ export function ServiceCard({ service, index }: { service: Service; index: numbe
       viewport={{ once: true, margin: "-60px" }}
       transition={{ duration: 0.5, delay: (index % 3) * 0.08 }}
       whileHover={{ y: -4 }}
-      className="group relative flex flex-col overflow-hidden rounded-xl border border-hairline bg-card p-6 transition-all duration-300 hover:border-primary/40 hover:shadow-xl hover:shadow-primary/5 dark:border-[#2b3139]"
+      className="group relative flex flex-col overflow-hidden rounded-xl border border-hairline bg-card p-6 transition-all duration-300 hover:border-primary/40 hover:shadow-xl hover:shadow-primary/5"
     >
       <div
         className="absolute -right-8 -top-8 size-28 rounded-full opacity-[0.07] blur-2xl transition-opacity duration-300 group-hover:opacity-[0.14]"

@@ -1,17 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
   <defs>
     <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0b0e11"/>
-      <stop offset="1" stop-color="#1e2329"/>
+      <stop offset="0" stop-color="#0a1a1a"/>
+      <stop offset="1" stop-color="#1a2a2a"/>
     </linearGradient>
     <linearGradient id="fg2" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#fcd535" stop-opacity="0.24"/>
-      <stop offset="1" stop-color="#fcd535" stop-opacity="0.04"/>
+      <stop offset="0" stop-color="#ff4d8b" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#ff4d8b" stop-opacity="0.04"/>
     </linearGradient>
   </defs>
   <rect width="1600" height="1000" fill="url(#bg2)"/>
   <rect x="0" y="200" width="1600" height="620" fill="url(#fg2)"/>
-  <rect x="160" y="596" width="150" height="124" rx="12" fill="#fcd535" opacity="0.26"/><rect x="410" y="579" width="150" height="141" rx="12" fill="#fcd535" opacity="0.38"/><rect x="660" y="562" width="150" height="158" rx="12" fill="#fcd535" opacity="0.5"/><rect x="910" y="545" width="150" height="175" rx="12" fill="#fcd535" opacity="0.14"/><rect x="1160" y="528" width="150" height="192" rx="12" fill="#fcd535" opacity="0.26"/><rect x="1410" y="511" width="150" height="209" rx="12" fill="#fcd535" opacity="0.38"/>
-  <text x="120" y="140" font-family="'JetBrains Mono', monospace" font-size="22" fill="#fcd535">view 3</text>
-  <text x="120" y="780" font-family="Inter, sans-serif" font-size="40" font-weight="700" fill="#ffffff">Todo App</text>
+  <rect x="160" y="596" width="150" height="124" rx="12" fill="#ff4d8b" opacity="0.26"/><rect x="410" y="579" width="150" height="141" rx="12" fill="#ff4d8b" opacity="0.38"/><rect x="660" y="562" width="150" height="158" rx="12" fill="#ff4d8b" opacity="0.5"/><rect x="910" y="545" width="150" height="175" rx="12" fill="#ff4d8b" opacity="0.14"/><rect x="1160" y="528" width="150" height="192" rx="12" fill="#ff4d8b" opacity="0.26"/><rect x="1410" y="511" width="150" height="209" rx="12" fill="#ff4d8b" opacity="0.38"/>
+  <text x="120" y="140" font-family="'JetBrains Mono', monospace" font-size="22" fill="#ff4d8b">view 3</text>
+  <text x="120" y="780" font-family="Inter, sans-serif" font-size="40" font-weight="700" fill="#fffaf0">Todo App</text>
 </svg>

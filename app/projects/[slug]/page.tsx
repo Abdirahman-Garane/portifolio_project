@@ -117,7 +117,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                   {project.features.map((feature) => (
                     <li
                       key={feature}
-                      className="flex items-start gap-3 rounded-lg border border-hairline bg-card p-4 text-sm text-muted-foreground dark:border-[#2b3139]"
+                      className="flex items-start gap-3 rounded-lg border border-hairline bg-card p-4 text-sm text-muted-foreground"
                     >
                       <span className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-primary/15">
                         <Check className="size-3 text-primary" />
@@ -132,7 +132,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
           <aside className="space-y-5">
             <Reveal>
-              <div className="rounded-xl border border-hairline bg-card p-6 dark:border-[#2b3139]">
+              <div className="rounded-xl border border-hairline bg-card p-6">
                 <h2 className="text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground">
                   Tech stack
                 </h2>
@@ -140,7 +140,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                   {project.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="rounded-md bg-muted px-2.5 py-1 text-xs font-medium text-foreground/80 dark:bg-[#2b3139]"
+                      className="rounded-md bg-muted px-2.5 py-1 text-xs font-medium text-foreground/80"
                     >
                       {tech}
                     </span>
@@ -150,7 +150,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             </Reveal>
 
             <Reveal delay={0.08}>
-              <div className="rounded-xl border border-hairline bg-card p-6 dark:border-[#2b3139]">
+              <div className="rounded-xl border border-hairline bg-card p-6">
                 <h2 className="text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground">
                   At a glance
                 </h2>
@@ -163,7 +163,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                   ].map(([label, value]) => (
                     <div
                       key={label}
-                      className="flex items-center justify-between gap-4 border-b border-hairline pb-3 last:border-0 last:pb-0 dark:border-[#2b3139]"
+                      className="flex items-center justify-between gap-4 border-b border-hairline pb-3 last:border-0 last:pb-0"
                     >
                       <dt className="text-muted-foreground">{label}</dt>
                       <dd className="font-medium">{value}</dd>
@@ -188,7 +188,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             </Reveal>
 
             <Reveal delay={0.16}>
-              <div className="overflow-hidden rounded-xl border border-hairline bg-gradient-to-b from-primary/15 to-transparent p-6 dark:border-[#2b3139]">
+              <div className="overflow-hidden rounded-xl border border-hairline bg-gradient-to-b from-primary/15 to-transparent p-6">
                 <div
                   className="flex size-12 items-center justify-center rounded-lg border"
                   style={{ backgroundColor: `${project.accent}18`, borderColor: `${project.accent}38`, color: project.accent }}
@@ -206,7 +206,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         </div>
       </section>
 
-      <section className="border-t border-hairline bg-muted/30 dark:bg-[#0e1116]">
+      <section className="border-t border-hairline bg-muted/30">
         <div className="mx-auto max-w-[1280px] px-4 py-20 sm:px-6">
           <div className="flex items-end justify-between gap-6">
             <SectionHeader

@@ -35,7 +35,7 @@ export function ProjectGallery({
       <button
         type="button"
         onClick={() => setLightbox(true)}
-        className="group relative block aspect-[16/10] w-full overflow-hidden rounded-xl border border-hairline bg-muted dark:border-[#2b3139]"
+        className="group relative block aspect-[16/10] w-full overflow-hidden rounded-xl border border-hairline bg-muted"
         aria-label="Open image gallery"
       >
         <AnimatePresence mode="wait">
@@ -72,7 +72,7 @@ export function ProjectGallery({
               "relative aspect-[16/10] w-24 overflow-hidden rounded-lg border transition-all",
               i === active
                 ? "border-primary ring-2 ring-primary/30"
-                : "border-hairline opacity-60 hover:opacity-100 dark:border-[#2b3139]"
+                : "border-hairline opacity-60 hover:opacity-100"
             )}
           >
             <Image src={src} alt="" fill sizes="96px" className="object-cover" />

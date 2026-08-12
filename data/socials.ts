@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Globe } from "lucide-react";
+import { Mail, MapPin, Globe } from "lucide-react";
 import { GithubIcon, LinkedinIcon, XIcon } from "@/components/brand-icons";
 
 export interface SocialLink {
@@ -29,13 +29,8 @@ export const socials: SocialLink[] = [
     icon: Mail,
   },
   {
-    label: "Phone",
-    href: "tel:+254700000000",
-    icon: Phone,
-  },
-  {
     label: "Location",
-    href: "https://maps.google.com/?q=Nairobi,Kenya",
+    href: "https://maps.google.com/?q=Banadir,Somalia",
     icon: MapPin,
   },
   {

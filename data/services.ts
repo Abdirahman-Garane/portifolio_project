@@ -7,7 +7,7 @@ export const services: Service[] = [
       "High-performance marketing sites, landing pages, and web apps built with modern React and Next.js.",
     icon: "code2",
     features: ["Next.js & React", "Responsive layouts", "SEO-ready output"],
-    accent: "#fcd535",
+    accent: "#e8b94a",
   },
   {
     title: "UI Design",
@@ -15,7 +15,7 @@ export const services: Service[] = [
       "Token-driven interface design systems with premium spacing, typography, and visual polish.",
     icon: "palette",
     features: ["Design systems", "Figma to code", "Component libraries"],
-    accent: "#2dbdb6",
+    accent: "#ff4d8b",
   },
   {
     title: "Dashboard Development",
@@ -23,7 +23,7 @@ export const services: Service[] = [
       "Data-dense dashboards that stay fast and readable — analytics, admin, and management consoles.",
     icon: "layoutDashboard",
     features: ["Analytics views", "Data tables", "Charts & gauges"],
-    accent: "#3b82f6",
+    accent: "#b8a4ed",
   },
   {
     title: "Full Stack Applications",
@@ -31,7 +31,7 @@ export const services: Service[] = [
       "End-to-end products with typed data layers, secure APIs, and robust business logic.",
     icon: "blocks",
     features: ["Typed data models", "REST APIs", "Auth & permissions"],
-    accent: "#0ecb81",
+    accent: "#1a3a3a",
   },
   {
     title: "API Integration",
@@ -39,7 +39,7 @@ export const services: Service[] = [
       "Clean integration with third-party services, payment flows, and external data sources.",
     icon: "gitBranch",
     features: ["REST & GraphQL", "Webhooks", "Rate-limit handling"],
-    accent: "#f6465d",
+    accent: "#a4d4c5",
   },
   {
     title: "Performance Optimization",
@@ -47,6 +47,6 @@ export const services: Service[] = [
       "Audit and harden your web app for Core Web Vitals, bundle size, and accessibility.",
     icon: "gauge",
     features: ["Core Web Vitals", "Bundle analysis", "Accessibility fixes"],
-    accent: "#707a8a",
+    accent: "#ffb084",
   },
 ];

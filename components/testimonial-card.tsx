@@ -12,7 +12,7 @@ export function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
       viewport={{ once: true, margin: "-60px" }}
       transition={{ duration: 0.5 }}
       whileHover={{ y: -4 }}
-      className="group relative flex h-full flex-col overflow-hidden rounded-xl border border-hairline bg-card p-6 transition-all duration-300 hover:border-primary/40 hover:shadow-xl hover:shadow-primary/5 dark:border-[#2b3139]"
+      className="group relative flex h-full flex-col overflow-hidden rounded-xl border border-hairline bg-card p-6 transition-all duration-300 hover:border-primary/40 hover:shadow-xl hover:shadow-primary/5"
     >
       <Quote
         className="absolute right-6 top-6 size-8 text-primary opacity-15 transition-opacity duration-300 group-hover:opacity-30"
@@ -33,7 +33,7 @@ export function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
         â€œ{testimonial.review}â€
       </blockquote>
 
-      <figcaption className="mt-6 flex items-center gap-3 border-t border-hairline pt-5 dark:border-[#2b3139]">
+      <figcaption className="mt-6 flex items-center gap-3 border-t border-hairline pt-5">
         <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-primary text-sm font-bold text-primary-foreground">
           {testimonial.initials}
         </span>

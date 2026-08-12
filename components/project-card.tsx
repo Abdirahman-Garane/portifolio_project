@@ -17,11 +17,11 @@ export function ProjectCard({ project, className, priority }: ProjectCardProps) 
       href={`/projects/${project.slug}`}
       className={cn(
         "group flex flex-col overflow-hidden rounded-xl border border-hairline bg-card transition-all duration-300",
-        "hover:-translate-y-1 hover:border-primary/40 hover:shadow-xl hover:shadow-primary/5 dark:border-[#2b3139]",
+        "hover:-translate-y-1 hover:border-primary/40 hover:shadow-xl hover:shadow-primary/5",
         className
       )}
     >
-      <div className="card-sheen relative aspect-[16/10] overflow-hidden border-b border-hairline bg-muted dark:border-[#2b3139]">
+      <div className="card-sheen relative aspect-[16/10] overflow-hidden border-b border-hairline bg-muted">
         <Image
           src={project.cover}
           alt={`${project.title} preview`}
@@ -51,7 +51,7 @@ export function ProjectCard({ project, className, priority }: ProjectCardProps) 
           {project.technologies.slice(0, 4).map((tech) => (
             <span
               key={tech}
-              className="rounded-md bg-muted px-2 py-0.5 text-[11px] font-medium text-muted-foreground dark:bg-[#2b3139]"
+              className="rounded-md bg-muted px-2 py-0.5 text-[11px] font-medium text-muted-foreground"
             >
               {tech}
             </span>
@@ -62,7 +62,7 @@ export function ProjectCard({ project, className, priority }: ProjectCardProps) 
             </span>
           )}
         </div>
-        <div className="mt-1 flex items-center gap-4 border-t border-hairline pt-3.5 dark:border-[#2b3139]">
+        <div className="mt-1 flex items-center gap-4 border-t border-hairline pt-3.5">
           <span className="inline-flex items-center gap-1.5 text-[13px] font-medium text-muted-foreground transition-colors group-hover:text-primary">
             <GithubIcon className="size-3.5" /> View on GitHub
           </span>

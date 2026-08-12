@@ -35,7 +35,7 @@ export default function AboutPage() {
         <div className="grid gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
           <div className="space-y-6">
             <Reveal>
-              <div className="relative overflow-hidden rounded-xl border border-hairline bg-card p-2 dark:border-[#2b3139]">
+              <div className="relative overflow-hidden rounded-xl border border-hairline bg-card p-2">
                 <div className="relative aspect-[4/5] overflow-hidden rounded-lg">
                   <Image
                     src="/avatar.svg"
@@ -50,7 +50,7 @@ export default function AboutPage() {
             </Reveal>
 
             <Reveal delay={0.1}>
-              <div className="rounded-xl border border-hairline bg-card p-6 dark:border-[#2b3139]">
+              <div className="rounded-xl border border-hairline bg-card p-6">
                 <h2 className="text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground">
                   Quick facts
                 </h2>
@@ -62,7 +62,7 @@ export default function AboutPage() {
                     ["Experience", "4+ years"],
                     ["Focus", "Frontend · Full-stack"],
                   ].map(([label, value]) => (
-                    <div key={label} className="flex items-center justify-between gap-4 border-b border-hairline pb-3 last:border-0 last:pb-0 dark:border-[#2b3139]">
+                    <div key={label} className="flex items-center justify-between gap-4 border-b border-hairline pb-3 last:border-0 last:pb-0">
                       <dt className="text-muted-foreground">{label}</dt>
                       <dd className="text-right font-medium">{value}</dd>
                     </div>
@@ -100,7 +100,7 @@ export default function AboutPage() {
                 title="How I approach projects"
               />
               <Reveal delay={0.1} className="mt-5">
-                <p className="rounded-xl border-l-2 border-primary bg-muted/40 p-5 text-pretty leading-relaxed text-foreground/90 dark:bg-[#1e2329]">
+                <p className="rounded-xl border-l-2 border-primary bg-muted/40 p-5 text-pretty leading-relaxed text-foreground/90">
                   {personal.professionalSummary}
                 </p>
               </Reveal>
@@ -126,7 +126,7 @@ export default function AboutPage() {
               <div className="mt-8 grid gap-5 sm:grid-cols-2">
                 {education.map((edu, i) => (
                   <Reveal key={edu.school} delay={i * 0.08}>
-                    <div className="h-full rounded-xl border border-hairline bg-card p-6 transition-colors hover:border-primary/40 dark:border-[#2b3139]">
+                    <div className="h-full rounded-xl border border-hairline bg-card p-6 transition-colors hover:border-primary/40">
                       <span className="flex size-10 items-center justify-center rounded-lg bg-primary/12 text-primary">
                         <GraduationCap className="size-5" />
                       </span>
@@ -153,7 +153,7 @@ export default function AboutPage() {
               <div className="mt-8 grid gap-5 sm:grid-cols-2">
                 {achievements.map((achievement, i) => (
                   <Reveal key={achievement.title} delay={i * 0.08}>
-                    <div className="flex h-full gap-4 rounded-xl border border-hairline bg-card p-5 dark:border-[#2b3139]">
+                    <div className="flex h-full gap-4 rounded-xl border border-hairline bg-card p-5">
                       <span className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-primary/12 text-primary">
                         <Trophy className="size-5" />
                       </span>

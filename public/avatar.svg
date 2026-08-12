@@ -1,23 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0b0e11"/>
-      <stop offset="1" stop-color="#1e2329"/>
+      <stop offset="0" stop-color="#0a1a1a"/>
+      <stop offset="1" stop-color="#1a2a2a"/>
     </linearGradient>
     <radialGradient id="glow" cx="0.5" cy="0.32" r="0.6">
-      <stop offset="0" stop-color="#fcd535" stop-opacity="0.28"/>
-      <stop offset="1" stop-color="#fcd535" stop-opacity="0"/>
+      <stop offset="0" stop-color="#e8b94a" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#e8b94a" stop-opacity="0"/>
     </radialGradient>
   </defs>
   <rect width="800" height="1000" fill="url(#bg)"/>
   <rect width="800" height="1000" fill="url(#glow)"/>
-  <g stroke="#fcd535" stroke-opacity="0.07">
+  <g stroke="#e8b94a" stroke-opacity="0.07">
     <line x1="0" y1="0" x2="800" y2="0"/><line x1="0" y1="140" x2="800" y2="140"/><line x1="0" y1="280" x2="800" y2="280"/><line x1="0" y1="420" x2="800" y2="420"/><line x1="0" y1="560" x2="800" y2="560"/><line x1="0" y1="700" x2="800" y2="700"/><line x1="0" y1="840" x2="800" y2="840"/><line x1="0" y1="980" x2="800" y2="980"/><line x1="0" y1="1120" x2="800" y2="1120"/>
   </g>
-  <circle cx="400" cy="360" r="180" fill="#fcd535"/>
-  <circle cx="400" cy="360" r="164" fill="#1e2329"/>
-  <text x="400" y="416" font-family="Inter, sans-serif" font-size="150" font-weight="800" fill="#fcd535" text-anchor="middle">AG</text>
-  <rect x="300" y="610" width="200" height="10" rx="5" fill="#fcd535" opacity="0.9"/>
-  <text x="400" y="660" font-family="Inter, sans-serif" font-size="30" font-weight="600" fill="#eaecef" text-anchor="middle">Abdirahman Garane</text>
-  <text x="400" y="700" font-family="'JetBrains Mono', monospace" font-size="20" fill="#929aa5" text-anchor="middle">FULL-STACK DEVELOPER</text>
+  <circle cx="400" cy="360" r="180" fill="#e8b94a"/>
+  <circle cx="400" cy="360" r="164" fill="#1a2a2a"/>
+  <text x="400" y="416" font-family="Inter, sans-serif" font-size="150" font-weight="800" fill="#e8b94a" text-anchor="middle">AG</text>
+  <rect x="300" y="610" width="200" height="10" rx="5" fill="#e8b94a" opacity="0.9"/>
+  <text x="400" y="660" font-family="Inter, sans-serif" font-size="30" font-weight="600" fill="#f5f0e0" text-anchor="middle">Abdirahman Garane</text>
+  <text x="400" y="700" font-family="'JetBrains Mono', monospace" font-size="20" fill="#a0a0a0" text-anchor="middle">FULL-STACK DEVELOPER</text>
 </svg>

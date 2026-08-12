@@ -7,7 +7,7 @@ import { services } from "@/data/services";
 
 export function ServicesPreview() {
   return (
-    <section className="border-y border-hairline bg-muted/30 dark:bg-[#0e1116]">
+    <section className="border-y border-hairline bg-muted/30">
       <div className="mx-auto max-w-[1280px] px-4 py-20 sm:px-6 lg:py-28">
         <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
           <SectionHeader

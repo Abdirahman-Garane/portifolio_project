@@ -19,7 +19,7 @@ export function PageHeader({ eyebrow, title, description }: PageHeaderProps) {
       />
       <div className="relative mx-auto max-w-[1280px] px-4 pb-14 pt-32 sm:px-6 sm:pb-16">
         <Reveal className="flex flex-col items-center gap-5 text-center">
-          <span className="inline-flex items-center gap-2 rounded-full border border-hairline bg-card/70 px-3.5 py-1.5 text-xs font-medium uppercase tracking-[0.14em] text-muted-foreground backdrop-blur dark:bg-[#1e2329]/70">
+          <span className="inline-flex items-center gap-2 rounded-full border border-hairline bg-card/70 px-3.5 py-1.5 text-xs font-medium uppercase tracking-[0.14em] text-muted-foreground backdrop-blur">
             <span className="size-1.5 rounded-full bg-primary" />
             {eyebrow}
           </span>

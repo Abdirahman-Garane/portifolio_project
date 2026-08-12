@@ -43,12 +43,12 @@ export default function ExperiencePage() {
               <div className="mt-8 space-y-5">
                 {education.map((edu, i) => (
                   <Reveal key={edu.school} delay={i * 0.08}>
-                    <div className="rounded-xl border border-hairline bg-card p-6 transition-colors hover:border-primary/40 dark:border-[#2b3139]">
+                    <div className="rounded-xl border border-hairline bg-card p-6 transition-colors hover:border-primary/40">
                       <div className="flex items-start justify-between gap-4">
                         <span className="flex size-11 shrink-0 items-center justify-center rounded-lg bg-primary/12 text-primary">
                           <GraduationCap className="size-5" />
                         </span>
-                        <span className="rounded-md bg-muted px-2.5 py-1 font-mono text-xs text-muted-foreground dark:bg-[#2b3139]">
+                        <span className="rounded-md bg-muted px-2.5 py-1 font-mono text-xs text-muted-foreground">
                           {edu.duration}
                         </span>
                       </div>

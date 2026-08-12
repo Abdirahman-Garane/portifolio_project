@@ -50,7 +50,7 @@ export function IntroSection() {
               delay={i * 0.08}
               className={i % 2 === 1 ? "sm:translate-y-6" : ""}
             >
-              <div className="flex h-full flex-col gap-2 rounded-xl border border-hairline bg-card p-6 transition-colors hover:border-primary/40 dark:border-[#2b3139]">
+              <div className="flex h-full flex-col gap-2 rounded-xl border border-hairline bg-card p-6 transition-colors hover:border-primary/40">
                 <Counter
                   value={stat.value}
                   suffix={stat.suffix}

@@ -8,7 +8,7 @@ const lines = [
   "ABDIRAHMAN GARANE",
   "Full-Stack Developer",
   "",
-  "Nairobi, Kenya  |  hello@abdirahman.dev  |  github.com/Abdirahman-Garane",
+  "Banadir, Somalia  |  hello@abdirahman.dev  |  github.com/Abdirahman-Garane",
   "",
   "SUMMARY",
   "Full-stack developer building premium, high-performance web applications",

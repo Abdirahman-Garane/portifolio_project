@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 
 export function Timeline({ items }: { items: ExperienceItem[] }) {
   return (
-    <ol className="relative space-y-10 border-l border-hairline pl-8 dark:border-[#2b3139]">
+    <ol className="relative space-y-10 border-l border-hairline pl-8">
       {items.map((item, index) => (
         <m.li
           key={`${item.company}-${item.position}`}
@@ -17,7 +17,7 @@ export function Timeline({ items }: { items: ExperienceItem[] }) {
           transition={{ duration: 0.5, delay: index * 0.08 }}
           className="relative"
         >
-          <span className="absolute -left-[37px] top-0.5 flex size-5 items-center justify-center rounded-full border border-hairline bg-background dark:border-[#2b3139]">
+          <span className="absolute -left-[37px] top-0.5 flex size-5 items-center justify-center rounded-full border border-hairline bg-background">
             <span
               className={cn(
                 "size-2 rounded-full",
@@ -26,7 +26,7 @@ export function Timeline({ items }: { items: ExperienceItem[] }) {
             />
           </span>
 
-          <div className="group rounded-xl border border-hairline bg-card p-5 transition-colors hover:border-primary/40 dark:border-[#2b3139]">
+          <div className="group rounded-xl border border-hairline bg-card p-5 transition-colors hover:border-primary/40">
             <div className="flex flex-wrap items-center justify-between gap-2">
               <h3 className="text-base font-semibold">{item.position}</h3>
               <span
@@ -34,7 +34,7 @@ export function Timeline({ items }: { items: ExperienceItem[] }) {
                   "rounded-md px-2.5 py-1 text-[11px] font-semibold",
                   item.current
                     ? "bg-primary/15 text-primary"
-                    : "bg-muted text-muted-foreground dark:bg-[#2b3139]"
+                    : "bg-muted text-muted-foreground"
                 )}
               >
                 {item.duration}
@@ -59,7 +59,7 @@ export function Timeline({ items }: { items: ExperienceItem[] }) {
               {item.technologies.map((tech) => (
                 <span
                   key={tech}
-                  className="rounded-md bg-muted px-2 py-0.5 text-[11px] font-medium text-muted-foreground dark:bg-[#2b3139]"
+                  className="rounded-md bg-muted px-2 py-0.5 text-[11px] font-medium text-muted-foreground"
                 >
                   {tech}
                 </span>

@@ -4,19 +4,18 @@ export const personal = {
   lastName: "Garane",
   role: "Full-Stack Developer",
   tagline:
-    "I build premium, high-performance web applications with clean architecture and delightful interfaces.",
+    "I build premium, high-performance web applications with Next.js, React, TypeScript, and careful design.",
   email: "hello@abdirahman.dev",
-  phone: "+254 700 000 000",
-  location: "Nairobi, Kenya",
-  locationShort: "Nairobi, KE",
+  location: "Banadir, Somalia",
+  locationShort: "Banadir, SO",
   availability: "Available for freelance",
   bio: [
-    "I'm a full-stack developer specializing in modern web experiences built with Next.js, React, and TypeScript. I focus on crafting interfaces that are fast, accessible, and a pleasure to use.",
+    "Full-stack developer building premium, high-performance web applications with Next.js, React, TypeScript, and careful design.",
     "Over the last several years I've shipped everything from real-estate platforms and expense trackers to hospital appointment systems and gym management dashboards — each one production-ready, responsive, and backed by clean, maintainable code.",
     "When I'm not shipping products, I'm refining my craft: studying design systems, tuning performance budgets, and exploring the next generation of front-end tooling.",
   ],
   professionalSummary:
-    "Full-stack developer with a product-minded approach. I design and build end-to-end applications — from database schema to pixel-perfect UI — and I obsess over performance, accessibility, and the small details that make software feel premium.",
+    "Full-stack developer building premium, high-performance web applications with Next.js, React, TypeScript, and careful design. I design and build end-to-end applications — from database schema to pixel-perfect UI — and I obsess over performance, accessibility, and the small details that make software feel premium.",
   resumeUrl: "/resume.pdf",
 } as const;
 

@@ -21,7 +21,7 @@ export const experience: ExperienceItem[] = [
     company: "Independent Projects",
     position: "Product Builder",
     duration: "2022 — 2023",
-    location: "Nairobi, Kenya",
+    location: "Banadir, Somalia",
     summary:
       "Conceptualized and launched multiple solo projects to sharpen full-stack fundamentals across the entire product lifecycle.",
     responsibilities: [
@@ -42,14 +42,6 @@ export const education: EducationItem[] = [
     location: "Nairobi, Kenya",
     description:
       "Focused on software engineering, data structures, algorithms, and database systems. Graduated with a strong record in systems programming and web development electives.",
-  },
-  {
-    school: "Self-Directed Learning",
-    degree: "Frontend & Full-Stack Engineering",
-    duration: "2021 — Present",
-    location: "Online",
-    description:
-      "Continuous, hands-on study of modern web standards — building real projects over tutorials and contributing to open source to reinforce every concept.",
   },
 ];
 

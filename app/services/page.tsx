@@ -56,7 +56,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="border-y border-hairline bg-muted/30 dark:bg-[#0e1116]">
+      <section className="border-y border-hairline bg-muted/30">
         <div className="mx-auto max-w-[1280px] px-4 py-20 sm:px-6">
           <SectionHeader
             eyebrow="Process"
@@ -66,7 +66,7 @@ export default function ServicesPage() {
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {processSteps.map((process, i) => (
               <Reveal key={process.step} delay={i * 0.1}>
-                <div className="relative h-full overflow-hidden rounded-xl border border-hairline bg-card p-6 dark:border-[#2b3139]">
+                <div className="relative h-full overflow-hidden rounded-xl border border-hairline bg-card p-6">
                   <span className="font-mono text-4xl font-bold tabular-nums text-primary/20">
                     {process.step}
                   </span>

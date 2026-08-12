@@ -10,14 +10,14 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-primary text-primary-foreground shadow-[inset_0_0_0_1px_rgba(24,26,32,0.06)] hover:bg-[#f0b90b]",
-        pill: "rounded-full bg-primary px-6 py-3.5 text-[15px] font-semibold text-primary-foreground hover:bg-[#f0b90b]",
+          "bg-primary text-primary-foreground hover:bg-primary-active",
+        pill: "rounded-full bg-primary px-6 py-3.5 text-[15px] font-semibold text-primary-foreground hover:bg-primary-active",
         outline:
-          "border-border bg-transparent text-foreground hover:border-elevated hover:bg-muted hover:text-foreground dark:border-input dark:bg-input/20 dark:hover:bg-input/50",
+          "border-border bg-transparent text-foreground hover:border-elevated hover:bg-muted hover:text-foreground",
         secondary:
-          "bg-card text-foreground border border-hairline hover:border-muted-foreground/40 dark:bg-input/20 dark:hover:bg-input/40",
+          "bg-card text-foreground border border-hairline hover:border-muted-foreground/40",
         ghost:
-          "text-foreground hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50",
+          "text-foreground hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground",
         destructive:
           "bg-down/10 text-down hover:bg-down/20 focus-visible:border-down/40 focus-visible:ring-down/20",
         up: "bg-up text-[#04130d] hover:brightness-110",

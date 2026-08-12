@@ -16,17 +16,17 @@ export function LoadingOverlay() {
       {visible && (
         <m.div
           key="boot"
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-[#0b0e11]"
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-surface-soft"
           initial={{ opacity: 1 }}
           exit={{ opacity: 0, transition: { duration: 0.4, ease: "easeInOut" } }}
         >
           <m.div
-            className="flex h-12 w-12 items-center justify-center rounded-md bg-[#fcd535]"
+            className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary"
             initial={{ scale: 0.7, y: 12 }}
             animate={{ scale: [0.7, 1.06, 1], y: 0 }}
             transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
           >
-            <span className="text-lg font-bold text-[#181a20]">A</span>
+            <span className="text-lg font-bold text-primary-foreground">A</span>
           </m.div>
         </m.div>
       )}

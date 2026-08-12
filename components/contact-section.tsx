@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import { ContactForm } from "@/components/contact-form";
 import { SectionHeader } from "@/components/section-header";
 import { socials } from "@/data/socials";
@@ -7,12 +7,11 @@ import { personal } from "@/data/personal";
 export function ContactSection() {
   const contactItems = [
     { icon: Mail, label: "Email", value: personal.email, href: `mailto:${personal.email}` },
-    { icon: Phone, label: "Phone", value: personal.phone, href: `tel:${personal.phone.replace(/\s/g, "")}` },
-    { icon: MapPin, label: "Location", value: personal.location, href: "https://maps.google.com/?q=Nairobi,Kenya" },
+    { icon: MapPin, label: "Location", value: personal.location, href: "https://maps.google.com/?q=Banadir,Somalia" },
   ];
 
   return (
-    <section className="border-y border-hairline bg-muted/30 dark:bg-[#0e1116]">
+    <section className="border-y border-hairline bg-muted/30">
       <div className="mx-auto max-w-[1280px] px-4 py-20 sm:px-6 lg:py-28">
         <SectionHeader
           eyebrow="Contact"
@@ -32,7 +31,7 @@ export function ContactSection() {
                 href={item.href}
                 target={item.href.startsWith("http") ? "_blank" : undefined}
                 rel="noreferrer"
-                className="group flex items-center gap-4 rounded-xl border border-hairline bg-card p-5 transition-all hover:border-primary/40 hover:shadow-lg hover:shadow-primary/5 dark:border-[#2b3139]"
+                className="group flex items-center gap-4 rounded-xl border border-hairline bg-card p-5 transition-all hover:border-primary/40 hover:shadow-lg hover:shadow-primary/5"
               >
                 <span className="flex size-11 items-center justify-center rounded-lg bg-primary/12 text-primary">
                   <item.icon className="size-5" />
@@ -46,7 +45,7 @@ export function ContactSection() {
               </a>
             ))}
 
-            <div className="rounded-xl border border-hairline bg-card p-5 dark:border-[#2b3139]">
+            <div className="rounded-xl border border-hairline bg-card p-5">
               <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                 Follow me
               </h3>
@@ -58,7 +57,7 @@ export function ContactSection() {
                     target={social.href.startsWith("http") ? "_blank" : undefined}
                     rel="noreferrer"
                     aria-label={social.label}
-                    className="flex size-10 items-center justify-center rounded-md border border-hairline text-muted-foreground transition-all hover:-translate-y-0.5 hover:border-primary hover:text-primary dark:border-[#2b3139]"
+                    className="flex size-10 items-center justify-center rounded-md border border-hairline text-muted-foreground transition-all hover:-translate-y-0.5 hover:border-primary hover:text-primary"
                   >
                     <social.icon className="size-[18px]" />
                   </a>

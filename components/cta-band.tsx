@@ -6,7 +6,7 @@ import { Reveal } from "@/components/reveal";
 export function CtaBand() {
   return (
     <Reveal className="px-4 sm:px-6">
-      <div className="relative mx-auto max-w-[1280px] overflow-hidden rounded-xl border border-hairline bg-card px-6 py-12 sm:px-12 sm:py-16 dark:border-[#2b3139] dark:bg-[#1e2329]">
+      <div className="relative mx-auto max-w-[1280px] overflow-hidden rounded-xl border border-hairline bg-card px-6 py-12 sm:px-12 sm:py-16">
         <div
           className="absolute -left-24 -top-24 size-72 rounded-full bg-primary/10 blur-3xl"
           aria-hidden="true"

@@ -2,7 +2,7 @@
 
 A premium, fully static portfolio website for full-stack developer **Abdirahman Garane**, built with Next.js 15 (App Router), TypeScript, Tailwind CSS, shadcn/ui, Framer Motion, and Lucide React.
 
-The design language is inspired by the Binance design system — a deep near-black canvas, a single high-voltage yellow accent (`#fcd535`), flat color-block cards, hairline borders, tabular numeric type, and a deliberate light-gray footer that closes the page.
+The design language is inspired by the Clay.com design system — a cream-tinted canvas (`#fffaf0`), dark near-black primary CTAs, saturated single-color feature cards (pink, teal, lavender, peach, ochre, mint, coral), generous rounded corners (12–24px), and a warm cream footer that closes the page instead of a dark one.
 
 ## Tech Stack
 

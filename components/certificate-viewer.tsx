@@ -74,9 +74,9 @@ export function CertificateViewer({ certificate, onClose }: CertificateViewerPro
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.96, y: 16 }}
             transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-            className="relative flex max-h-[90vh] w-full max-w-3xl flex-col overflow-hidden rounded-xl border border-hairline bg-card shadow-2xl dark:border-[#2b3139]"
+            className="relative flex max-h-[90vh] w-full max-w-3xl flex-col overflow-hidden rounded-xl border border-hairline bg-card shadow-2xl"
           >
-            <div className="flex items-center justify-between gap-4 border-b border-hairline px-5 py-4 dark:border-[#2b3139]">
+            <div className="flex items-center justify-between gap-4 border-b border-hairline px-5 py-4">
               <div className="min-w-0">
                 <h3 className="truncate text-base font-semibold">{certificate.title}</h3>
                 <p className="truncate text-xs text-muted-foreground">
@@ -123,7 +123,7 @@ export function CertificateViewer({ certificate, onClose }: CertificateViewerPro
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1], delay: 0.05 }}
                 className={cn(
-                  "relative w-full overflow-hidden rounded-lg border border-hairline bg-card shadow-lg dark:border-[#2b3139]",
+                  "relative w-full overflow-hidden rounded-lg border border-hairline bg-card shadow-lg",
                   !imageLoaded && "bg-muted/50"
                 )}
               >

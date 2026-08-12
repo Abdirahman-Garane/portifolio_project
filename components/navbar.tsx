@@ -6,7 +6,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { ThemeToggle } from "@/components/theme-toggle";
 import { useScrollY } from "@/hooks/use-scroll-y";
 import { cn } from "@/lib/utils";
 
@@ -71,7 +70,7 @@ export function Navbar() {
               >
                 {active && (
                   <m.span
-                    className="absolute inset-0 rounded-md bg-muted dark:bg-muted/60"
+                    className="absolute inset-0 rounded-md bg-muted"
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.2 }}
@@ -84,12 +83,11 @@ export function Navbar() {
         </div>
 
         <div className="flex items-center gap-2">
-          <ThemeToggle />
           <Button asChild className="hidden lg:inline-flex">
-            <Link href="/contact">
+            <a href="mailto:gaarane40@gmail.com">
               Hire me
               <ArrowUpRight className="size-4 transition-transform duration-200 group-hover/button:translate-x-0.5 group-hover/button:-translate-y-0.5" />
-            </Link>
+            </a>
           </Button>
           <Button
             variant="ghost"
@@ -154,7 +152,7 @@ export function Navbar() {
               </div>
               <div className="mt-2 border-t border-hairline pt-3">
                 <Button asChild className="w-full" onClick={() => setOpen(false)}>
-                  <Link href="/contact">Hire me</Link>
+                  <a href="mailto:gaarane40@gmail.com">Hire me</a>
                 </Button>
               </div>
             </m.div>

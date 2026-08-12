@@ -28,11 +28,11 @@ export function CertificateCard({ certificate, className }: CertificateCardProps
       <div
         className={cn(
           "group flex flex-col overflow-hidden rounded-xl border border-hairline bg-card transition-all duration-300",
-          "hover:-translate-y-1 hover:border-primary/40 hover:shadow-xl hover:shadow-primary/5 dark:border-[#2b3139]",
+          "hover:-translate-y-1 hover:border-primary/40 hover:shadow-xl hover:shadow-primary/5",
           className
         )}
       >
-        <div className="relative aspect-[8/5] overflow-hidden border-b border-hairline bg-muted dark:border-[#2b3139]">
+        <div className="relative aspect-[8/5] overflow-hidden border-b border-hairline bg-muted">
           <Image
             src={certificate.image}
             alt={`${certificate.title} certificate preview`}
@@ -69,7 +69,7 @@ export function CertificateCard({ certificate, className }: CertificateCardProps
           <p className="flex-1 text-sm leading-relaxed text-muted-foreground">
             {certificate.description}
           </p>
-          <div className="mt-1 border-t border-hairline pt-3.5 dark:border-[#2b3139]">
+          <div className="mt-1 border-t border-hairline pt-3.5">
             <div className="flex gap-2">
               <Button size="sm" variant="secondary" className="flex-1" onClick={() => setViewing(true)}>
                 <Eye className="size-4 mr-1.5" /> View

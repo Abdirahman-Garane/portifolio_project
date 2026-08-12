@@ -3,7 +3,7 @@ import { Counter } from "@/components/counter";
 
 export function Statistics() {
   return (
-    <section className="border-y border-hairline bg-card dark:bg-[#1e2329]">
+    <section className="border-y border-hairline bg-card">
       <div className="mx-auto grid max-w-[1280px] grid-cols-2 gap-y-10 px-4 py-14 sm:px-6 lg:grid-cols-4 lg:py-16">
         {statistics.map((stat) => (
           <div

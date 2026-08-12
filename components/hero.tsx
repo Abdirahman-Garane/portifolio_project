@@ -30,12 +30,12 @@ function HeroPanel() {
       transition={{ duration: 0.7, ease: EASE, delay: 0.4 }}
       className="relative"
     >
-      <div className="relative overflow-hidden rounded-xl border border-hairline bg-card shadow-2xl dark:border-[#2b3139]">
-        <div className="flex items-center justify-between border-b border-hairline px-4 py-3 dark:border-[#2b3139]">
+      <div className="relative overflow-hidden rounded-xl border border-hairline bg-card shadow-2xl">
+        <div className="flex items-center justify-between border-b border-hairline px-4 py-3">
           <div className="flex items-center gap-1.5">
-            <span className="size-2.5 rounded-full bg-[#f6465d]" />
-            <span className="size-2.5 rounded-full bg-[#fcd535]" />
-            <span className="size-2.5 rounded-full bg-[#0ecb81]" />
+            <span className="size-2.5 rounded-full bg-muted-soft/70" />
+            <span className="size-2.5 rounded-full bg-surface-strong" />
+            <span className="size-2.5 rounded-full bg-hairline" />
           </div>
           <span className="flex items-center gap-1.5 text-[11px] font-medium uppercase tracking-wider text-muted-foreground">
             <TerminalSquare className="size-3" /> dev / portfolio
@@ -50,7 +50,7 @@ function HeroPanel() {
             {heroStats.map((stat) => (
               <div
                 key={stat.label}
-                className="rounded-lg border border-hairline bg-muted/40 p-3.5 dark:border-[#2b3139] dark:bg-[#1e2329]"
+                className="rounded-lg border border-hairline bg-muted/40 p-3.5"
               >
                 <div className="font-mono text-2xl font-bold tabular-nums text-primary">
                   <Counter value={stat.value} suffix={stat.suffix} />
@@ -69,7 +69,7 @@ function HeroPanel() {
                   <span className="font-medium text-foreground">{skill.label}</span>
                   <span className="font-mono text-muted-foreground">{skill.value}%</span>
                 </div>
-                <div className="h-1.5 overflow-hidden rounded-full bg-muted dark:bg-[#2b3139]">
+                <div className="h-1.5 overflow-hidden rounded-full bg-muted">
                   <m.div
                     className="h-full rounded-full bg-primary"
                     initial={{ width: 0 }}
@@ -82,11 +82,11 @@ function HeroPanel() {
             ))}
           </div>
 
-          <div className="flex flex-wrap gap-2 border-t border-hairline pt-4 dark:border-[#2b3139]">
+          <div className="flex flex-wrap gap-2 border-t border-hairline pt-4">
             {["Next.js", "TypeScript", "Tailwind", "Supabase"].map((tech) => (
               <span
                 key={tech}
-                className="rounded-md border border-hairline bg-background px-2.5 py-1 text-xs font-medium text-muted-foreground dark:border-[#2b3139] dark:bg-[#1e2329]"
+                className="rounded-md border border-hairline bg-background px-2.5 py-1 text-xs font-medium text-muted-foreground"
               >
                 {tech}
               </span>
@@ -95,7 +95,7 @@ function HeroPanel() {
         </div>
       </div>
 
-      <div className="absolute -right-3 -top-3 hidden rounded-lg border border-hairline bg-card px-3 py-2 text-xs font-semibold shadow-lg sm:block dark:border-[#2b3139]">
+      <div className="absolute -right-3 -top-3 hidden rounded-lg border border-hairline bg-card px-3 py-2 text-xs font-semibold shadow-lg sm:block">
         Ships to production
       </div>
     </m.div>
@@ -115,7 +115,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, ease: EASE }}
-              className="inline-flex items-center gap-2 rounded-full border border-hairline bg-card/70 px-3.5 py-1.5 text-[13px] font-medium text-muted-foreground backdrop-blur dark:bg-[#1e2329]/70"
+              className="inline-flex items-center gap-2 rounded-full border border-hairline bg-card/70 px-3.5 py-1.5 text-[13px] font-medium text-muted-foreground backdrop-blur"
             >
               <span className="relative flex size-2">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-up opacity-75" />
@@ -140,7 +140,7 @@ export function Hero() {
               transition={{ duration: 0.6, ease: EASE, delay: 0.2 }}
               className="mt-6 max-w-lg text-base leading-relaxed text-muted-foreground sm:text-lg"
             >
-              I'm {personal.name} â€” a full-stack developer crafting fast, accessible, and
+              I'm {personal.name} — a full-stack developer crafting fast, accessible, and
               beautifully engineered products with Next.js, TypeScript, and careful design.
             </m.p>
 
@@ -177,7 +177,7 @@ export function Hero() {
                   target={social.href.startsWith("http") ? "_blank" : undefined}
                   rel="noreferrer"
                   aria-label={social.label}
-                  className="flex size-10 items-center justify-center rounded-md border border-hairline text-muted-foreground transition-all hover:-translate-y-0.5 hover:border-primary hover:text-primary dark:border-[#2b3139]"
+                  className="flex size-10 items-center justify-center rounded-md border border-hairline text-muted-foreground transition-all hover:-translate-y-0.5 hover:border-primary hover:text-primary"
                 >
                   <social.icon className="size-[18px]" />
                 </a>
