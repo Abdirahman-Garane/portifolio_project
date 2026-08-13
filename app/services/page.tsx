@@ -45,7 +45,7 @@ export default function ServicesPage() {
             Services that ship <span className="text-primary">real value</span>.
           </>
         }
-        description="From a single landing page to a full product — here's how I can help you build, launch, and optimize."
+        description="From a landing page to a full product — here's how I can help you build and launch."
       />
 
       <section className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 lg:py-20">

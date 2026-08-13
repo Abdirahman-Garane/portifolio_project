@@ -20,7 +20,7 @@ export function FeaturedProjects() {
                 Selected projects I'm <span className="text-primary">proud of</span>.
               </>
             }
-            description="A snapshot of the products, platforms, and tools I've designed and shipped — each one built to be fast, accessible, and dependable."
+            description="A snapshot of the products I've designed and shipped — fast, accessible, and dependable."
           />
           <Button asChild variant="outline" size="lg" className="shrink-0">
             <Link href="/projects">

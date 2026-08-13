@@ -10,12 +10,11 @@ export const personal = {
   locationShort: "Banadir, SO",
   availability: "Available for freelance",
   bio: [
-    "Full-stack developer building premium, high-performance web applications with Next.js, React, TypeScript, and careful design.",
-    "Over the last several years I've shipped everything from real-estate platforms and expense trackers to hospital appointment systems and gym management dashboards — each one production-ready, responsive, and backed by clean, maintainable code.",
-    "When I'm not shipping products, I'm refining my craft: studying design systems, tuning performance budgets, and exploring the next generation of front-end tooling.",
+    "Full-stack developer building premium web apps with Next.js, React, TypeScript, and careful design.",
+    "I've shipped real-estate platforms, expense trackers, and hospital scheduling systems — production-ready and backed by clean code.",
   ],
   professionalSummary:
-    "Full-stack developer building premium, high-performance web applications with Next.js, React, TypeScript, and careful design. I design and build end-to-end applications — from database schema to pixel-perfect UI — and I obsess over performance, accessibility, and the small details that make software feel premium.",
+    "I build end-to-end applications — from database to pixel-perfect UI — with a focus on performance, accessibility, and the details that make software feel premium.",
   resumeUrl: "/resume.pdf",
 } as const;
 

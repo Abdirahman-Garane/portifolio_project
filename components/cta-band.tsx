@@ -26,8 +26,7 @@ export function CtaBand() {
               Have a project in mind? Let's build it together.
             </h2>
             <p className="mt-3 text-pretty text-base text-muted-foreground">
-              From premium landing pages to full-stack products — I'm available for freelance work
-              and collaborations. Tell me about your idea and I'll get back to you within 24 hours.
+              I'm available for freelance work — tell me your idea and I'll reply within 24 hours.
             </p>
           </div>
           <div className="flex flex-wrap gap-3">

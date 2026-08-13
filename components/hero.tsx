@@ -140,8 +140,8 @@ export function Hero() {
               transition={{ duration: 0.6, ease: EASE, delay: 0.2 }}
               className="mt-6 max-w-lg text-base leading-relaxed text-muted-foreground sm:text-lg"
             >
-              I'm {personal.name} — a full-stack developer crafting fast, accessible, and
-              beautifully engineered products with Next.js, TypeScript, and careful design.
+              I'm {personal.name} — a full-stack developer building fast, accessible products
+              with Next.js, TypeScript, and careful design.
             </m.p>
 
             <m.div

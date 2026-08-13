@@ -5,11 +5,11 @@ export const projects: Project[] = [
     slug: "real-estate-platform",
     title: "Real Estate Platform",
     category: "Full Stack",
-    tagline: "Discover, favorite, and contact agents through a premium property marketplace.",
+    tagline: "A premium property marketplace with search, favorites, and agent contact.",
     description:
-      "A modern real-estate marketplace where users explore property listings, save favorites, and connect with agents through a polished, responsive experience.",
+      "Explore listings, save favorites, and connect with agents in a polished, responsive marketplace.",
     longDescription:
-      "Built as a complete property marketplace, this platform handles listing discovery, filtering, agent profiles, and saved favorites. The architecture separates the marketing surface from the interactive dashboard so both stay fast and focused. Every listing flows through a structured pipeline that keeps the data model clean and the UI honest.",
+      "A complete property marketplace with listing discovery, filtering, agent profiles, and saved favorites. A structured data pipeline keeps the model clean and the UI fast.",
     features: [
       "Advanced property search & filtering",
       "Save favorites and compare listings",
@@ -37,11 +37,11 @@ export const projects: Project[] = [
     slug: "hospital-appointment-system",
     title: "Hospital Appointment System",
     category: "Full Stack",
-    tagline: "Streamlined scheduling, records, and prescriptions for modern clinics.",
+    tagline: "Streamlined scheduling, records, and prescriptions for clinics.",
     description:
-      "An appointment scheduling system that unifies bookings, patient records, and prescription tracking in a secure, responsive platform.",
+      "Unifies bookings, patient records, and prescription tracking in a secure, responsive platform.",
     longDescription:
-      "This system replaces chaotic paper scheduling with a digital workflow: patients book appointments, staff manage records, and prescriptions are tracked end-to-end. The focus was on clear information hierarchy, fast navigation, and permission-aware features that keep clinical workflows safe and simple.",
+      "Replaces paper scheduling with a digital workflow: patients book, staff manage records, and prescriptions are tracked end-to-end. Role-based access keeps clinical workflows safe and simple.",
     features: [
       "Online appointment booking",
       "Patient record management",
@@ -68,11 +68,11 @@ export const projects: Project[] = [
     slug: "expense-tracker",
     title: "Expense Tracker",
     category: "Web App",
-    tagline: "Track income, budget categories, and visualize spending with live insights.",
+    tagline: "Track income, budgets, and spending with live insights.",
     description:
-      "A modern personal-finance dashboard that turns scattered transactions into clear, actionable insights with charts and budget alerts.",
+      "Turns scattered transactions into clear insights with charts and budget alerts.",
     longDescription:
-      "Expense Tracker ingests transactions across categories and budgets, then renders financial health through interactive charts. Monthly budgets trigger smart alerts before you overspend, and the responsive dashboard works just as well on mobile as on desktop. The focus was on speed — every chart and table feels instant.",
+      "Ingests transactions across categories and budgets, then renders financial health through interactive charts. Budget alerts fire before you overspend, and the dashboard feels instant on mobile and desktop.",
     features: [
       "Income & expense tracking",
       "Category & budget management",
@@ -99,11 +99,11 @@ export const projects: Project[] = [
     slug: "gym-member-registration",
     title: "Gym Member Registration",
     category: "Web App",
-    tagline: "Manage memberships, attendance, plans, and payments for busy gyms.",
+    tagline: "Manage memberships, attendance, plans, and payments for gyms.",
     description:
-      "A gym management platform that tracks members, trainers, memberships, attendance, workout plans, and payments from one dashboard.",
+      "Tracks members, trainers, memberships, attendance, plans, and payments from one dashboard.",
     longDescription:
-      "Designed for gym owners who need one source of truth, this system centralizes member onboarding, attendance tracking, workout plan assignment, and payment history. Clean tables and quick actions keep daily operations fast, while the responsive layout makes it usable at the front desk or on the go.",
+      "One source of truth for gym owners: member onboarding, attendance, workout plans, and payment history. Clean tables and quick actions keep daily operations fast.",
     features: [
       "Member & trainer management",
       "Membership tiers & billing",
@@ -132,9 +132,9 @@ export const projects: Project[] = [
     category: "Backend",
     tagline: "A lightweight, fast API for accurate prayer time calculations.",
     description:
-      "A minimal REST API that computes prayer times from latitude and longitude, built for speed and easy integration.",
+      "Computes prayer times from latitude and longitude — fast, minimal, easy to integrate.",
     longDescription:
-      "Prayer Time API wraps astronomical calculations in a clean HTTP interface. It validates coordinates, returns timezone-aware schedules, and stays lean — no heavy dependencies, just predictable JSON. A great example of my backend fundamentals: correct math, robust error handling, and documentation-first design.",
+      "Wraps astronomical calculations in a clean HTTP interface with timezone-aware schedules. No heavy dependencies, just predictable JSON and robust error handling.",
     features: [
       "Coordinate-based calculations",
       "Timezone-aware schedules",
@@ -155,9 +155,9 @@ export const projects: Project[] = [
     category: "Frontend",
     tagline: "A snappy, keyboard-friendly task manager with zero distractions.",
     description:
-      "A classic productivity tool rebuilt with clean state management and a buttery-smooth UI for fast task entry and organization.",
+      "A productivity tool rebuilt with clean state management and a smooth UI for fast task entry.",
     longDescription:
-      "This is my take on the humble todo list — treated as a design exercise. The result is a responsive, accessible task manager with fast add/edit/complete flows, local persistence, and thoughtful micro-interactions that make the boring work of maintaining a list actually pleasant.",
+      "A design exercise on the humble todo list: responsive, accessible, with fast add/edit/complete flows, local persistence, and thoughtful micro-interactions.",
     features: [
       "Fast add & complete flows",
       "Local persistence",
@@ -178,9 +178,9 @@ export const projects: Project[] = [
     category: "Frontend",
     tagline: "A showroom-grade landing page with bold imagery and smooth scroll motion.",
     description:
-      "A high-fidelity car showroom landing experience built to flex CSS Grid, responsive design, and modern layout techniques.",
+      "A high-fidelity car showroom landing built to flex CSS Grid and responsive layout.",
     longDescription:
-      "Built during my layout-focused practice, this project explores CSS Grid named template areas, fluid typography, and adaptive breakpoints. It's a visual showcase — proof that strong fundamentals in HTML and CSS still power the best interfaces.",
+      "Built during layout practice: CSS Grid named template areas, fluid typography, and adaptive breakpoints — proof that strong HTML/CSS fundamentals still power the best interfaces.",
     features: [
       "CSS Grid named template areas",
       "Fully responsive breakpoints",
@@ -201,9 +201,9 @@ export const projects: Project[] = [
     category: "Frontend",
     tagline: "Instant health metrics with clear visual feedback and history.",
     description:
-      "A clean, accessible BMI calculator that turns height and weight inputs into categorized health feedback.",
+      "Turns height and weight inputs into categorized health feedback.",
     longDescription:
-      "A small but polished utility: enter height and weight, get an instant BMI classification with a visual scale. It exercises form validation, computed state, and mobile-first layouts — the kind of careful, complete small app that underpins larger products.",
+      "A small but polished utility: instant BMI classification with a visual scale, form validation, and a mobile-first layout.",
     features: [
       "Instant BMI calculation",
       "Visual category scale",

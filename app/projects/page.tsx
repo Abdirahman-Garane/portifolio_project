@@ -19,7 +19,7 @@ export default function ProjectsPage() {
             Things I've <span className="text-primary">built</span>.
           </>
         }
-        description="A collection of the products, platforms, and experiments I've designed and shipped. Filter by category or search by technology."
+        description="Products, platforms, and experiments I've designed and shipped. Filter by category or technology."
       />
       <section className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6">
         <ProjectsGrid />

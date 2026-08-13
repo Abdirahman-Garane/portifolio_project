@@ -7,12 +7,11 @@ export const experience: ExperienceItem[] = [
     duration: "2023 — Present",
     location: "Remote",
     summary:
-      "Designing and shipping production web applications end-to-end for clients — from database schema to deployed UI.",
+      "Designing and shipping full-stack products end-to-end for clients.",
     responsibilities: [
-      "Built full-stack products with Next.js, TypeScript, and Supabase",
-      "Translated vague briefs into structured, typed data models and clean UIs",
+      "Built products with Next.js, TypeScript, and Supabase",
+      "Translated briefs into clean, typed data models and UIs",
       "Delivered responsive, accessible interfaces scoring 95+ on Lighthouse",
-      "Owned deployments, monitoring, and performance budgets for client projects",
     ],
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "PostgreSQL"],
     current: true,
@@ -23,12 +22,11 @@ export const experience: ExperienceItem[] = [
     duration: "2022 — 2023",
     location: "Banadir, Somalia",
     summary:
-      "Conceptualized and launched multiple solo projects to sharpen full-stack fundamentals across the entire product lifecycle.",
+      "Launched solo projects to sharpen full-stack fundamentals.",
     responsibilities: [
-      "Shipped a real-estate platform, expense tracker, and hospital scheduling system",
-      "Practiced API design with a production-style prayer times REST API",
-      "Exercised layout mastery through CSS Grid, responsive, and animation challenges",
-      "Kept every project documented, typed, and structured for future maintainers",
+      "Shipped a real-estate platform, expense tracker, and hospital scheduler",
+      "Practiced API design with a production-style REST API",
+      "Kept every project documented and typed",
     ],
     technologies: ["React", "Node.js", "Express", "PostgreSQL", "JavaScript"],
   },
@@ -42,7 +40,7 @@ export const education: EducationItem[] = [
     location: "Banadir, Somalia",
     gpa: "3.81 / 4.0",
     description:
-      "Focused on software engineering, data structures, algorithms, and database systems. Graduated with a strong record in systems programming and web development electives.",
+      "Software engineering, data structures, algorithms, and database systems.",
   },
 ];
 

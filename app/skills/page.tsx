@@ -21,7 +21,7 @@ export default function SkillsPage() {
             A toolkit built for <span className="text-primary">shipping</span>.
           </>
         }
-        description="Six disciplines, one goal — building software that's fast, reliable, and a pleasure to use. Here's where I'm strongest."
+        description="Six disciplines, one goal — building software that's fast, reliable, and a pleasure to use."
       />
 
       <section className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 lg:py-20">

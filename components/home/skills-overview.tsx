@@ -20,7 +20,7 @@ export function SkillsOverview() {
             A full-stack toolkit, <span className="text-primary">constantly sharpened</span>.
           </>
         }
-        description="From pixel-perfect interfaces to reliable backends and data models — here's the technology I reach for to ship quality software."
+        description="From pixel-perfect interfaces to reliable backends — the tech I use to ship quality software."
       />
 
       <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">

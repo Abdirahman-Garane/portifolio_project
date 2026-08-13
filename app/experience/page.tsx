@@ -25,7 +25,7 @@ export default function ExperiencePage() {
             My professional <span className="text-primary">journey</span>.
           </>
         }
-        description="A timeline of the roles, projects, and learning that shaped how I build software."
+        description="The roles, projects, and learning that shaped how I build software."
       />
 
       <section className="mx-auto max-w-[1280px] px-4 py-16 sm:px-6 lg:py-20">

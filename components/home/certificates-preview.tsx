@@ -31,7 +31,7 @@ export function CertificatesPreview() {
                 Credentials that back <span className="text-primary">my craft</span>.
               </>
             }
-            description="A snapshot of the certificates I've earned — click any one to view the full certificate."
+            description="A snapshot of the certificates I've earned — click one to view it."
           />
           <Button asChild variant="outline" size="lg" className="shrink-0">
             <Link href="/certificates">

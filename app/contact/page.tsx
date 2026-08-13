@@ -19,7 +19,7 @@ export default function ContactPage() {
             Say <span className="text-primary">hello</span>.
           </>
         }
-        description="Have a project, a role, or just a question? My inbox is always open — I usually reply within 24 hours."
+        description="Have a project, a role, or just a question? I usually reply within 24 hours."
       />
       <ContactSection />
       <CtaBand />
