@@ -5,7 +5,7 @@ export const personal = {
   role: "Full-Stack Developer",
   tagline:
     "I build premium, high-performance web applications with Next.js, React, TypeScript, and careful design.",
-  email: "hello@abdirahman.dev",
+  email: "gaarane40@gmail.com",
   location: "Banadir, Somalia",
   locationShort: "Banadir, SO",
   availability: "Available for freelance",

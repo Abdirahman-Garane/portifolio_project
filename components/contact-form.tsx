@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import { personal } from "@/data/personal";
 
 type FormState = {
   name: string;
@@ -67,7 +68,7 @@ export function ContactForm() {
           <h3 className="mt-5 text-xl font-semibold">Message sent!</h3>
           <p className="mt-2 max-w-sm text-sm leading-relaxed text-muted-foreground">
             Thanks for reaching out. I'll get back to you within 24 hours. For urgent requests,
-            email me directly at hello@abdirahman.dev.
+            email me directly at {personal.email}.
           </p>
           <Button variant="outline" className="mt-6" onClick={() => setStatus("idle")}>
             Send another message

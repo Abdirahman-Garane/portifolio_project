@@ -43,7 +43,7 @@ export function Timeline({ items }: { items: ExperienceItem[] }) {
             <div className="mt-1.5 flex items-center gap-2 text-sm text-muted-foreground">
               <Briefcase className="size-3.5" />
               <span className="font-medium text-foreground/80">{item.company}</span>
-              <span aria-hidden="true">Â·</span>
+              <span aria-hidden="true">·</span>
               <span>{item.location}</span>
             </div>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{item.summary}</p>

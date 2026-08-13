@@ -17,8 +17,7 @@ No databases, APIs, or backend services — everything is local, typed data.
 
 ## Pages
 
-- `/` — Home (hero, intro, featured projects, statistics, skills, services, testimonials, contact)
-- `/about` — Biography, summary, experience, education, achievements, resume
+- `/` — Home (hero, about, experience, education, achievements, featured projects, statistics, skills, certificates, contact)
 - `/projects` — Grid with search + category filtering
 - `/projects/[slug]` — Project detail with gallery, features, tech stack
 - `/skills` — Six skill categories with animated progress indicators

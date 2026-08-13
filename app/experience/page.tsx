@@ -51,6 +51,11 @@ export default function ExperiencePage() {
                         <span className="rounded-md bg-muted px-2.5 py-1 font-mono text-xs text-muted-foreground">
                           {edu.duration}
                         </span>
+                        {edu.gpa && (
+                          <span className="rounded-md bg-primary/10 px-2.5 py-1 font-mono text-xs font-semibold text-primary">
+                            GPA {edu.gpa}
+                          </span>
+                        )}
                       </div>
                       <h3 className="mt-4 text-base font-semibold">{edu.degree}</h3>
                       <p className="mt-1 text-sm text-muted-foreground">

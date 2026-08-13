@@ -1,6 +1,7 @@
 import { Hero } from "@/components/hero";
 import { TechMarquee } from "@/components/tech-marquee";
-import { IntroSection } from "@/components/home/intro-section";
+import { AboutSection } from "@/components/home/about-section";
+import { JourneySection } from "@/components/home/journey-section";
 import { FeaturedProjects } from "@/components/home/featured-projects";
 import { SkillsOverview } from "@/components/home/skills-overview";
 import { CertificatesPreview } from "@/components/home/certificates-preview";
@@ -11,7 +12,8 @@ export default function HomePage() {
     <>
       <Hero />
       <TechMarquee />
-      <IntroSection />
+      <AboutSection />
+      <JourneySection />
       <FeaturedProjects />
       <SkillsOverview />
       <CertificatesPreview />

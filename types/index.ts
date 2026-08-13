@@ -62,6 +62,7 @@ export interface EducationItem {
   degree: string;
   duration: string;
   location: string;
+  gpa?: string;
   description: string;
 }
 

@@ -36,10 +36,11 @@ export const experience: ExperienceItem[] = [
 
 export const education: EducationItem[] = [
   {
-    school: "University of Nairobi",
+    school: "University of Somalia (UNISO)",
     degree: "BSc, Computer Science",
-    duration: "2020 — 2024",
-    location: "Nairobi, Kenya",
+    duration: "2021 — 2025",
+    location: "Banadir, Somalia",
+    gpa: "3.81 / 4.0",
     description:
       "Focused on software engineering, data structures, algorithms, and database systems. Graduated with a strong record in systems programming and web development electives.",
   },

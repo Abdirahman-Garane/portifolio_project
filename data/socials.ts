@@ -15,7 +15,7 @@ export const socials: SocialLink[] = [
   },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/abdirahman-garane",
+    href: "https://www.linkedin.com/in/eng-abdirahman-garane-73405b17b/",
     icon: LinkedinIcon,
   },
   {

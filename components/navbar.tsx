@@ -8,10 +8,10 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { useScrollY } from "@/hooks/use-scroll-y";
 import { cn } from "@/lib/utils";
+import { personal } from "@/data/personal";
 
 const navLinks = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
   { label: "Projects", href: "/projects" },
   { label: "Skills", href: "/skills" },
   { label: "Experience", href: "/experience" },
@@ -84,7 +84,7 @@ export function Navbar() {
 
         <div className="flex items-center gap-2">
           <Button asChild className="hidden lg:inline-flex">
-            <a href="mailto:gaarane40@gmail.com">
+            <a href={`mailto:${personal.email}`}>
               Hire me
               <ArrowUpRight className="size-4 transition-transform duration-200 group-hover/button:translate-x-0.5 group-hover/button:-translate-y-0.5" />
             </a>
@@ -152,7 +152,7 @@ export function Navbar() {
               </div>
               <div className="mt-2 border-t border-hairline pt-3">
                 <Button asChild className="w-full" onClick={() => setOpen(false)}>
-                  <a href="mailto:gaarane40@gmail.com">Hire me</a>
+                  <a href={`mailto:${personal.email}`}>Hire me</a>
                 </Button>
               </div>
             </m.div>
