@@ -2,6 +2,39 @@ import type { Project } from "@/types";
 
 export const projects: Project[] = [
   {
+    slug: "nexus-learn-lms",
+    title: "Nexus Learn LMS",
+    category: "Full Stack",
+    tagline: "A full-stack learning management system with role-based dashboards for admins, instructors, and students.",
+    description:
+      "Platform overview, course builder, enrollment, progress tracking, and assignment grading — all in one polished app.",
+    longDescription:
+      "Built with Next.js 15 App Router, Supabase (PostgreSQL, Auth, Storage), TypeScript, and Tailwind CSS v4. Features three role-based dashboards: admin (user management, analytics), instructor (course builder, grading), and student (catalog, enroll, learn).",
+    features: [
+      "Admin dashboard with analytics",
+      "Course builder with lessons & assignments",
+      "Student catalog with search, filter & sort",
+      "Enrollment & progress tracking",
+      "Assignment submissions & grading",
+      "Dark mode support",
+    ],
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Supabase",
+      "PostgreSQL",
+      "React",
+    ],
+    cover: "/projects/lms.png",
+    gallery: ["/projects/lms.png", "/projects/lms-2.png"],
+    githubUrl: "https://github.com/Abdirahman-Garane/Learning-Management-System-LMS",
+    year: "2026",
+    accent: "#6366f1",
+    icon: "layoutDashboard",
+    featured: true,
+  },
+  {
     slug: "real-estate-platform",
     title: "Real Estate Platform",
     category: "Full Stack",
