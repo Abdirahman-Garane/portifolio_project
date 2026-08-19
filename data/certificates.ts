@@ -8,7 +8,7 @@ export const certificates: Certificate[] = [
     description:
       "Algorithm design with AI assistance to plan, implement, and debug efficiently.",
     image: "/certificates/Coding Algorithms with AI_page-0001.jpg",
-    credentialUrl: "https://coursera.org/verify/example1",
+    credentialUrl: "https://www.coursera.org/account/accomplishments/certificate/QBY9DWAU30JV",
   },
   {
     title: "Developing Back-End Apps with Node.js and Express",
@@ -17,7 +17,7 @@ export const certificates: Certificate[] = [
     description:
       "Server-side apps with Node.js and Express — REST APIs, authentication, and databases.",
     image: "/certificates/Developing Back-End Apps with Node.js and Express_page-0001.jpg",
-    credentialUrl: "https://coursera.org/verify/example2",
+    credentialUrl: "https://www.coursera.org/account/accomplishments/certificate/QY97L9XIUGZF",
   },
   {
     title: "Developing Front-End Apps with React",
@@ -26,7 +26,7 @@ export const certificates: Certificate[] = [
     description:
       "Component-based UIs with React — state management and hooks.",
     image: "/certificates/Developing Front-End Apps with React_page-0001.jpg",
-    credentialUrl: "https://coursera.org/verify/example3",
+    credentialUrl: "https://www.coursera.org/account/accomplishments/certificate/GDFEKRK9Q4FN",
   },
   {
     title: "Foundations of Leadership and Management",
@@ -35,7 +35,7 @@ export const certificates: Certificate[] = [
     description:
       "Core principles of leadership, team management, and communication.",
     image: "/certificates/Foundations of Leadership and Management_page-0001.jpg",
-    credentialUrl: "https://coursera.org/verify/example4",
+    credentialUrl: "https://www.coursera.org/account/accomplishments/certificate/QASFVJTS2WYX",
   },
   {
     title: "Preparing Data for Analysis with Microsoft Excel",
@@ -44,6 +44,6 @@ export const certificates: Certificate[] = [
     description:
       "Cleaning, organizing, and preparing data in Excel for analysis.",
     image: "/certificates/Preparing Data for Analysis with Microsoft Excel_page-0001.jpg",
-    credentialUrl: "https://learn.microsoft.com/verify/example5",
+    credentialUrl: "https://www.coursera.org/account/accomplishments/certificate/UI5QB9030W89",
   },
 ];
