@@ -26,7 +26,7 @@ export function LoadingOverlay() {
             animate={{ scale: [0.7, 1.06, 1], y: 0 }}
             transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
           >
-            <span className="text-lg font-bold text-primary-foreground">A</span>
+            <span className="text-lg font-bold text-primary-foreground">Cg</span>
           </m.div>
         </m.div>
       )}

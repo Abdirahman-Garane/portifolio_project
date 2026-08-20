@@ -24,7 +24,7 @@ function Brand() {
   return (
     <Link href="/" className="group flex items-center gap-2.5" aria-label="Abdirahman Garane — home">
       <span className="flex h-9 w-9 items-center justify-center rounded-md bg-primary font-bold text-primary-foreground transition-transform duration-300 group-hover:-rotate-6">
-        AG
+        Cg
       </span>
       <span className="hidden text-[15px] font-semibold tracking-[-0.01em] sm:block">
         Abdirahman<span className="text-muted-foreground">.dev</span>
