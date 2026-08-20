@@ -1,7 +1,7 @@
 "use client";
 
 import { m } from "framer-motion";
-import { ArrowUpRight, Download, Star, TerminalSquare } from "lucide-react";
+import { ArrowUpRight, Download, Mail, Star, TerminalSquare } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { personal } from "@/data/personal";
@@ -162,6 +162,12 @@ export function Hero() {
                   Resume
                 </Link>
               </Button>
+              <Button asChild size="lg" variant="outline">
+                <a href={`mailto:${personal.email}`}>
+                  <Mail className="size-4" />
+                  Email me
+                </a>
+              </Button>
             </m.div>
 
             <m.div
@@ -170,7 +176,7 @@ export function Hero() {
               transition={{ duration: 0.6, delay: 0.5 }}
               className="mt-8 flex items-center gap-1.5"
             >
-              {socials.slice(0, 4).map((social) => (
+              {socials.slice(0, 5).map((social) => (
                 <a
                   key={social.label}
                   href={social.href}

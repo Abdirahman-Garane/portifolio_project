@@ -53,7 +53,7 @@ export function Footer() {
               React, TypeScript, and careful design.
             </p>
             <div className="mt-5 flex gap-2.5">
-              {socials.slice(0, 4).map((social) => (
+              {socials.slice(0, 5).map((social) => (
                 <a
                   key={social.label}
                   href={social.href}

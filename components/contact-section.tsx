@@ -50,7 +50,7 @@ export function ContactSection() {
                 Follow me
               </h3>
               <div className="mt-3 flex flex-wrap gap-2">
-                {socials.slice(0, 4).map((social) => (
+                {socials.slice(0, 5).map((social) => (
                   <a
                     key={social.label}
                     href={social.href}
